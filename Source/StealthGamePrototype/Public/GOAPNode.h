@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework\Actor.h"
 
 
 /**
@@ -14,4 +13,9 @@ class STEALTHGAMEPROTOTYPE_API GOAPNode
 public:
 	GOAPNode();
 	~GOAPNode();
+
+
+	float cost = 999999;
+	TArray<GOAPNode> CurrentPath;
+	
 };
